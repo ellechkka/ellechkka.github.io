@@ -1,0 +1,275 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>интернет магазин</title>
+        <style>
+            * {box-sizing: border-box; font-size: 1,5em;}
+            body {margin: 0;}
+            li {list-style-type: none;}
+            header {
+                display: flex;
+                padding: 10px;
+                text-align: center;
+                background: #1abc9c;
+                color: white;
+                justify-content: space-around;
+                align-content: space-around;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            header a{margin: auto;}
+            nav {
+                display: flex;
+                flex-direction: column;
+                background-color: #333;
+            }
+            nav a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+            nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            main {  
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .filter {
+                flex: 20%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+            .list {
+                flex: 80%;
+                background-color: white;
+                padding: 20px;
+            }
+
+
+            .product-wrapper {
+                display: block;
+                width: 100%;
+                float: left;
+                transition: width .2s;
+            }
+            .product {
+                display: block;
+                position: relative;
+                background: #fff;
+                margin: 0 20px 20px 0;
+                text-decoration: none;
+                z-index: 0;
+                height: 700px;
+            }
+            .products {
+                list-style: none;
+                margin: 0 -20px 0 0;
+                padding: 0;
+            }
+            .product-photo {
+                position: relative;
+                padding-bottom: 100%;
+                overflow: hidden;
+            }
+            .product-photo img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                max-width: 80%;
+                max-height: 80%;
+                margin: auto;
+                transition: transform .4s ease-out;
+                border: 1px solid #000;
+				border-radius: 3px;
+            }
+
+            footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .footer_row1{  
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            @media screen and (min-width: 500px) and (max-width: 900px) {
+                header, .footer_row1 {
+                    flex-direction: row;
+                }
+                nav {   
+                    flex-direction: column;
+                }
+                .product-wrapper {
+                    width: 50%;
+                }
+                .product {
+					height: 530px;
+				}
+            }
+            @media screen and (min-width: 901px) {
+                header, nav, .footer_row1 {
+                    flex-direction: row;
+                }
+                .product-wrapper {
+                    width: 33.3333%;
+                }
+                .product {
+					height: 550px;
+				}
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <img src="https://i.ibb.co/bW6L4zg/image.png" height="75px">
+            </div>
+            <form action="" method="get" id="searchform">
+                <input type="text" placeholder="Искать">
+                <button type="submit">
+                    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" height="24px">
+                </button>
+            </form>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="30px"></a>
+		    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" width="30px"></a>
+			<a href=""><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="30px"></a>
+        </header>
+        <nav>
+            <a href="">Главная страница</a>]
+            <a href="">Каталог</a>
+            <a href="">Доставка</a>
+            <a href="">Контакты</a>
+        </nav>
+        <main>
+
+            <div class="filter">
+                <h2>Категории</h2>
+                <ul>
+                    <li><a href="">Декор</a></li>
+                    <li><a href="">Диваны</a></li>
+                    <li><a href="">Ковры</a></li>
+                    <li><a href="">Освещение</a></li>
+                    <li><a href="">Столы</a></li>
+                    <li><a href="">Стулья</a></li>
+                    <li><a href="">Тумбочки</a></li>
+                    <li><a href="">Шкафы</a></li>
+                </ul>
+            </div>
+            <div class="list">
+                <h2>Каталог</h2>
+                <ul class="products">
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/holmsund-3-mestnyy-divan-krovat-nordvalla-svetlo-zelenyy__0973704_pe812111_s5.jpg?f=xl">
+                            </div>
+                            <h6>Диван</h6>
+                            <p>3-местный диван-кровать</p>
+                            <p>39 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/landskrona-landskruna-2-mestnyy-divan-grann-bumstad-belyy-bereza__0320975_pe514793_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Диван</h6>
+                            <p>2-местный диван из кожи</p>
+                            <p>49 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/knopparp-2-mestnyy-divan-knisa-svetlo-seryy__0713943_pe729858_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Диван</h6>
+                            <p>2-местный диван</p>
+                            <p>8 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/landskrona-landskruna-2-mestnyy-divan-gunnared-svetlo-zelenyy-derevo__0602106_pe680175_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Диван</h6>
+                            <p>2-местный диван</p>
+                            <p>35 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/strandmon-kreslo-s-podgolovnikom-shiftebu-bezhevyy__0641725_pe700622_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Кресло</h6>
+                            <p>Кресло с подголовником</p>
+                            <p>13 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/landskrona-landskruna-kreslo-gunnared-temno-seryy-derevo__0602087_pe680155_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Кресло</h6>
+                            <p>Кресло серое</p>
+                            <p>24 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/vonsbaek-vonsbek-kover-korotkiy-vors-zelenyy__0717879_pe731373_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Ковер</h6>
+                            <p>Ковер, 170x230 см</p>
+                            <p>5 499  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                    <li class="product-wrapper">
+                        <a href="" class="product">
+                            <div class="product-photo">
+                                <img src="https://www.ikea.com/ru/ru/images/products/loevbacken-lyovbakken-pridivannyy-stolik-klassicheskiy-korichnevyy__0173699_pe327848_s5.jpg?f=xxs">
+                            </div>
+                            <h6>Столик</h6>
+                            <p>Придиванный столик</p>
+                            <p>4 999  ₽</p>
+                            <button><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="24px"> Добавить в корзину</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_row1">
+                <a href="">Главная страница</a</li>
+                <a href="">Доставка</a></li>
+                <a href="">Контакты</a>
+            </div>
+            <div class="footer_row2">
+			    <img src="https://i.ibb.co/SdCsVhV/image.png" width="100%">	
+            </div>
+        </footer>
+    </body>
+</html>
