@@ -14,12 +14,8 @@
             }
             body {margin: 0;}
             li {list-style-type: none;}
-	    a {margin: 5px;}
-	    header a {margin: 10px;}
-		header a img {
-                margin-top: auto;
-                margin-bottom: auto;
-            }
+            a {padding: 5px;}
+            header a {padding: 10px;}
             header {
                 display: flex;
                 padding: 10px;
@@ -27,10 +23,11 @@
                 background-color: #fffce1;
                 justify-content: space-around;
                 align-content: space-around;
+                vertical-align: middle;
                 flex-wrap: wrap;
                 flex-direction: column;
+                position: relative;
             }
-           
             .header-logo {
 				display: block;
 				float: left;
@@ -71,7 +68,7 @@
                 display: flex;
                 flex-direction: column;
                 background-color: #fffce1;
-		}
+            }
             nav a {
 				color: #42675b;
 				text-decoration: none;
@@ -96,6 +93,9 @@
             .filter {
                 flex: 20%;
                 padding: 20px;
+            }
+            .filter ul{
+                margin-left: -20px;
             }
             .filter il {
 				text-decoration: none;
@@ -215,6 +215,7 @@
                 header, .footer_row1 {
                     flex-direction: row;
                 }
+                header a {padding-top: 20px;}
                 nav {   
                     flex-direction: column;
                 }
@@ -229,6 +230,7 @@
                 header, nav, .footer_row1 {
                     flex-direction: row;
                 }
+                header a {padding-top: 25px;}
                 .product-wrapper {
                     width: 33.3333%;
                 }
@@ -242,16 +244,16 @@
         <header>
             <div class="header-logo">
                 <img src="https://i.ibb.co/bW6L4zg/image.png" height="75px">
-            </div>
+            </div>    
             <form action="" method="get" id="searchform">
                 <input type="text" placeholder="Искать">
                 <button type="submit">
                     <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" height="24px">
                 </button>
-            </form>
-            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="30px"></a>
-		    <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" width="30px"></a>
-			<a href=""><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="30px"></a>
+            </form>       
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" width="30px"></a>        
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" width="30px"></a>        
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" width="30px"></a>       
         </header>
         <nav>
             <a href="">Главная страница</a>
