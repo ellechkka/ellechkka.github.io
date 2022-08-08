@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        * {
+            --color1: #fec397;
+            --color2: #6f5f5e;
+            --color3: #d28a7c;
+            --color4: #aec8ca;
+            --color5: #6d8c8e;
+        }
+        body {
+            background-color: var(--color1);
+            color: var(--color2);
+            font-size: 24px;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        .com {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            border: 1px solid var(--color5);
+            color: var(--color5);
+            background-color: var(--color4);
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Вот такие вот приколы</h1>
+    <div id="content1" class="com"></div>
+    <button id="btn2" onclick='text2()' style="display: none;">tap</button>
+    <button id="btn1" onclick='text1()'>tap</button>
+    <div id="content2" class="com"></div>
+    <script>
+        function text1 () {
+            document.getElementById('content1').innerHTML = 'приветик';
+            document.getElementById('btn2').style.display = 'block';
+            document.getElementById('btn1').style.display = 'none';
+        }
+        function text2 () {
+
+            document.getElementById('content2').innerHTML = 'прикол';
+            document.getElementById('content2').style.color = 'var(--color3)';
+        }
+    </script>
+</body>
+</html>
