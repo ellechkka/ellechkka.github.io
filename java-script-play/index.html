@@ -38,6 +38,7 @@
     <button id="btn2" onclick='text2()' style="display: none;">tap</button>
     <button id="btn1" onclick='text1()'>tap</button>
     <div id="content2" class="com"></div>
+    <button id="btn3" onclick="text3()" style="display: none;">tap</button>
     <script>
         function text1 () {
             document.getElementById('content1').innerHTML = 'приветик';
@@ -45,9 +46,13 @@
             document.getElementById('btn1').style.display = 'none';
         }
         function text2 () {
-
             document.getElementById('content2').innerHTML = 'прикол';
             document.getElementById('content2').style.color = 'var(--color3)';
+            document.getElementById('btn3').style.display = 'block';
+            document.getElementById('btn2').style.display = 'none';
+        }
+        function text3 () {
+            alert('ещё прикол');
         }
     </script>
 </body>
