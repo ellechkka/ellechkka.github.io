@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons.flaticon.com/png/512/2687/premium/2687160.png?token=exp=1660201101~hmac=03775c9bf762094d87194bc31419013e">
+    <title>Считаем зайчиков</title>
+    <style>
+        body {
+            margin: 0;
+            background: rgb(249,174,84);
+            background: linear-gradient(42deg, rgba(249,174,84,1) 0%, rgba(250,149,132,1) 100%);
+        }
+        input {
+            background-color: #c4e2e2;
+            color: #688052;
+            font-size: 36px;
+            margin: 30px;
+        }
+        img {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="countRabbits()" value="Считать кроликов!">
+    <img src="https://cdn.mos.cms.futurecdn.net/QRWbWEXXAQEHcSbfBbmgCX.jpg">
+    <script>
+        function countRabbits() {
+            for(let i=1; i<=3; i++) {
+                alert("Кролик номер " + i);
+            }
+        }
+    </script>
+</body>
+</html>
