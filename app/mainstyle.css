@@ -1,0 +1,51 @@
+body {
+    width: 390px;
+    height: 844px;
+    color: #010101;
+    overflow-y: scroll  ;
+    padding: 50px 0 34px;
+    margin: 0;
+    /* border: 1px solid #ddd; */
+    /* background-color: #e0aeb4; */
+}
+.app_name {
+    margin-top: 158px;
+    font-size: 36px;
+    text-align: center;
+}
+.button1, .button2, .button3,
+.l_in, .signup {
+    margin-right: auto;
+    margin-left: auto;
+}
+.button1 {
+    margin-top: 108px;
+    width: 280px;
+}
+.button2 {
+    margin-top: 44px;
+    width: 238px;
+}
+.nav {
+    margin-top: 14px;
+    margin-left: 14px;
+}
+.heading {
+    margin-left: 42px;
+    margin-top: 30px;
+}
+.heading h1{
+    font-size: 36px;
+}
+.button3 {
+    width: 338px;
+    margin-top: 30px;
+}
+.l_in {
+    margin-top: 28px;
+    width: 336px;
+}
+.signup {
+    margin-top: 68px;
+    width: 336px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <title>log in</title>
+</head>
+<body>
+    <nav>
+        <a class="back" href="page1.html">
+            <img src="images\back arror.svg"></img>
+            <span class="text_font">назад</span>
+        </a>
+    </nav>
+    
+    <div class="login_container l_in">
+        <form class="text_font">
+        
+            <label for="email">e-mail</label>
+            <input type="text" placeholder="e-mail" name="email" required>
+            
+            <label for="psw">пароль</label>
+            <input type="password" placeholder="пароль" name="psw" required>
+
+            <div class="login_as">
+                <input type="radio" id="contactChoice1" name="contact" value="master">
+                <label for="contactChoice1">войти как мастер</label><br>
+
+            
+                <input type="radio" id="contactChoice2" name="contact" value="client">
+                <label for="contactChoice2">войти как клиент</label>
+            </div>
+                    
+            <button type="submit" class="text_font">войти</button>
+        </form>
+        <a href="page4.html" class="text_font">зарегестрироваться</a>
+    </div>
+</body>
+</html>

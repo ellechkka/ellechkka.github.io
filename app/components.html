@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+
+    <title>ui kit</title>
+</head>
+<body>
+    <!-- конопка с заголовочным шрифтом большая -->
+    <button class="button_default header_font">кнопка</button><br><br>
+    <!-- конопка с текстовым шрифтом большая -->
+    <button class="button_default text_font">кнопка</button><br><br>
+    <!-- конопка с текстовым шрифтом маленькая -->
+    <button class="button_small text_font">кнопка</button><br><br>
+    <!-- конопка записи -->
+    <button class="book header_font">записаться</button><br><br>
+
+    <!-- изменение имени -->
+    <div class="el_container text_font edit">
+        <span>имя</span>
+    </div><br><br>
+
+    <!-- дисплей имени -->
+    <div class="el_container">
+        <span class="text_font comment">имя</span><br>
+        <span class="header_font display">ИМЯ</span>
+    </div><br><br>
+
+    <!-- изменение адреса -->
+    <div class="el_container text_font edit">
+        <span>адрес</span>
+    </div><br><br>
+
+    <!-- дисплей адреса -->
+    <div class="el_container">
+        <span class="text_font comment">адрес</span><br>
+        <span class="header_font display">ГОРОД, УЛИЦА, ДОМ</span>
+    </div><br><br>
+
+    <!-- кнопка назад -->
+    <a class="back">
+        <img src="images\back arror.svg"></img>
+        <span class="text_font">назад</span>
+    </a><br><br>
+
+    <!-- карточка мастера -->
+    <div class="el_container master">
+        <header>
+            <img src="images\photo pattern.svg"></img>
+            <div>
+                <span class="text_font master_name">Александра</span>
+                <span class="text_font card_text">от 1100&nbsp;руб</span>
+            </div>
+        </header>
+        <img src="images\location mark.svg"></img>
+        <span class="text_font card_text">Санкт-Петербург, Парк&nbsp;Победы</span>
+    </div><br><br>
+
+    <!-- карточка услуг -->
+    <div class="el_container">
+        <span class="text_font comment">услуги</span>
+        <div class="service_container">
+            <dl class="text_font">
+                <dt>маникюр</dt>
+                <dd>1&nbsp;час&nbsp;&ndash; 400&nbsp;руб</dd>
+
+                <dt>маникюр&nbsp;+ покрытие гель лак</dt>
+                <dd>2,5&nbsp;часа&nbsp;&ndash; 900&nbsp;руб</dd>
+
+                <dt>снятие&nbsp;+ маникюр&nbsp;+ покрытие гель лак</dt>
+                <dd>3&nbsp;часа&nbsp;&ndash; 1100&nbsp;руб</dd>
+            </dl>
+        </div>
+    </div><br><br>
+
+    <!-- закрытые фильтры -->
+    <div class="el_container filter">
+        <button>
+            <img src="images\down arror.png"></img>
+        </button>
+        <span class="text_font">фильтры</span>
+    </div><br><br>
+
+    <!-- открытые фильтры -->
+    <div class="el_container filter_down">
+        <div class="filter"> 
+            <button>
+                <img src="images\up arror.png"></img>
+            </button>
+            <span class="text_font">фильтры</span>
+        </div>
+
+        <span class="text_font price">цена</span>
+        <div class="price_display">
+            <div class="cell text_font">от</div>
+            <span>&nbsp;&mdash;&nbsp;</span>
+            <div class="cell text_font">до</div>
+        </div>
+        <div class="checkbox_block">
+            <input type="checkbox" name="dist_filter">
+            <label for="dist_filter" class="text_font">сортировать по расстоянию</label>
+        </div>
+        <div class="view_map">
+            <span class="text_font">посмотреть на карте</span>
+        </div>
+    </div><br><br>
+
+    <!-- кнопка добавления услуг -->
+    <button class="button_add_service text_font">+ добавить услугу</button><br><br>
+    <div class="el_container service_addition text_font">
+        <div class="row">
+            <span class="text_font">название: </span>
+            <div class="field"></div>
+        </div>
+        <div class="row">
+            <span class="text_font">цена: </span>
+            <div class="field"></div>
+        </div>
+        
+        <div class="row">
+            <span class="text_font">длительность: </span>
+            <div class="field"></div>
+        </div>
+        
+        <div class="row">
+            <span class="text_font">комметарий: </span>
+            <div class="field"></div>
+        </div>
+    </div><br><br>
+
+    <!-- предыдущие услвги без отзыва -->
+    <div class="prev">
+        <header>
+            <img src="images\photo pattern.svg"></img>
+            <div>
+                <span class="text_font master_name">Александра</span>
+            </div>
+            <span class="text_font card_text">21.11</span>
+            <span class="text_font card_text">1300&nbsp;руб</span>
+        </header>
+        <button class="button_add_review text_font">+ добавить отзыв</button>
+    </div><br><br>
+
+    <!-- предыдущие услвги с отзывом -->
+    <div class="prev">
+        <header>
+            <img src="images\photo pattern.svg"></img>
+            <div>
+                <span class="text_font master_name">Александра</span>
+            </div>
+            <span class="text_font card_text">21.11</span>
+            <span class="text_font card_text">1300&nbsp;руб</span>
+        </header>
+        <div class="review text_font">
+            <img src="images\stars.svg"></img>
+            <span>Приятная мастерица, сняла пол балла за неудобную локацию и ...</span>
+            <button class="text_font full_review">читать полностью</button>
+        </div>
+    </div><br><br>
+
+    <!-- вход -->
+    <div class="login_container">
+        <form class="text_font">
+        
+            <label for="email">e-mail</label>
+            <input type="text" placeholder="e-mail" name="email" required>
+            
+            <label for="psw">пароль</label>
+            <input type="password" placeholder="пароль" name="psw" required>
+
+            <div class="login_as">
+                <input type="radio" id="contactChoice1" name="contact" value="master">
+                <label for="contactChoice1">войти как мастер</label><br>
+
+            
+                <input type="radio" id="contactChoice2" name="contact" value="client">
+                <label for="contactChoice2">войти как клиент</label>
+            </div>
+                    
+            <button type="submit" class="text_font">войти</button>
+        </form>
+        <a href="" class="text_font">зарегестрироваться</a>
+    </div><br><br>
+
+    <!-- регистрация -->
+    <div class="login_container signup">
+        <form class="text_font">
+        
+            <label for="email">e-mail</label>
+            <input type="text" placeholder="e-mail" name="email" required>
+            
+            <label for="psw">пароль</label>
+            <input type="password" placeholder="пароль" name="psw" required>
+
+            <label for="psw-repeat">повторите пароль</label>
+            <input type="password" placeholder="пароль ещё раз" name="psw-repeat" required>
+
+
+            <div class="login_as">
+                <input type="radio" id="contactChoice1" name="contact" value="master">
+                <label for="contactChoice1">мастер</label><br>
+
+            
+                <input type="radio" id="contactChoice2" name="contact" value="client">
+                <label for="contactChoice2">клиент</label>
+            </div>
+                    
+            <button type="submit" class="text_font">зарегестрироваться</button>
+        </form>
+        <a href="" class="text_font">войти</a>
+    </div><br><br>
+
+    <!-- блок с отзывом -->
+    <div class="el_container">
+        <span class="text_font comment">отзывы</span><br>
+        <div class="client_review">
+            <header>
+                <span class="header_font">анна</span>
+                <img src="images\stars.svg"></img>
+            </header>
+            <span class="text_font">Приятная мастерица, сняла пол балла за неудобную локацию и звезду и балл за то, что не смогла сделать дизайн, который я хотела</span>
+            <div class="photo_row">
+                <img src="images\photo.svg"></img>
+                <img src="images\photo.svg"></img>
+                <img src="images\photo.svg"></img>
+            </div>
+        </div>
+
+        <div class="client_review">
+            <header>
+                <span class="header_font">марина</span>
+                <img src="images\stars1.svg"></img>
+            </header>
+            <span class="text_font">Делаю маникюр у мастерицы почти год, все всегда нравится, приятная атмосфера, смотрим</span>
+            <div class="photo_row">
+                <img src="images\photo.svg"></img>
+                <img src="images\photo.svg"></img>
+                <img src="images\photo.svg"></img>
+            </div>
+        </div>
+    </div><br><br>
+</body>
+</html>
