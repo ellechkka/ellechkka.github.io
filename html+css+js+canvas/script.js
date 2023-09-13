@@ -6,8 +6,6 @@ var ctx = canvas.getContext("2d");
 ctx.fillStyle = 'rgb(116, 157, 102)';
 
 canvas.addEventListener("mousedown", function(event){
-    // event.preventDefault();
-    // canvas.oncontextmenu = null;
     let x = event.offsetX;
     let y = event.offsetY;
 
