@@ -1,0 +1,10 @@
+#contain1 img {
+    /* width: 350px; */
+    height: 300px;
+    border: 5px solid pink;
+    box-sizing: border-box;
+    
+}
+#contain2 {
+    color: blueviolet;
+}
