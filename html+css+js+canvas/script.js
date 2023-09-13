@@ -9,13 +9,10 @@ canvas.addEventListener("mousedown", function(event){
     let x = event.offsetX;
     let y = event.offsetY;
 
-    if (event.button == 0) {
-        ctx.fillStyle = 'rgb(116, 157, 102)';
+    if (event.button == 0) 
         ctx.fillRect(x, y, 10, 10);
-    }
-    if (event.button == 2) {
-        ctx.fillStyle = 'rgb(255, 255, 255)';
-        ctx.fillRect(x-5, y-5, 20, 20);
-    }
+    
+    if (event.button == 2) 
+        ctx.clearRect(x-5, y-5, 20, 20);
 });
 canvas.addEventListener('contextmenu', event => event.preventDefault());
