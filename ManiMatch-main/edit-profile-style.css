@@ -1,0 +1,96 @@
+.back-action {
+    visibility: hidden;
+}
+.edit-name {
+    font-size: 28px;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.one, .two, .three, .four,
+.five, .six, .seven, .eight {
+    box-sizing: border-box;
+    padding-top: 33px;
+    padding-left: 52px;
+}
+.photo-block img:hover, 
+.service-row img:hover,
+.add-service:hover,
+.edit-timetable:hover,
+.edit-name:hover  {
+    cursor: pointer;
+}
+.service-row img {
+    height: 18px;
+}
+.service-block-edit {
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-right: 8px;
+}
+.service-row {
+    box-sizing: border-box;
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: var(--bg-color-op);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.service-row span {
+    display: block;
+    max-width: 218px;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 46px;
+}
+
+.info-block-edit {
+    width: 320px;
+    background-color: var(--button-color);
+    padding: 8px 12px 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 35px 20px;
+}
+.add-service {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 31px;
+
+    /* border: 1px dashed var(--text-color); */
+    Width: 320px;
+    Height: 100px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23333' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='12' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 8px;
+    margin-left: 35px;
+    font-size: 28px;
+}
+.edit-timetable {
+    margin-top: 20px;
+    padding: 12px 85px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: 35px;
+    width: 320px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    font-size: 24px;
+}
+.space-after {
+    content: '';
+    margin-bottom: 37px;
+}
+button.add-photo {
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    width: 240px;
+    margin: 20px 26px 10px;
+    padding: 12px 0;
+    text-align: center;
+}

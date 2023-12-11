@@ -1,0 +1,25 @@
+.homepage-bg {
+    background: url(images/startpage.png);
+}
+.homepage-container {
+    margin: 200px 75px 360px;
+}
+.homepage-container button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.button-block {
+    margin-top: 44px;
+}
+.login-signup {
+    margin-top: 40px
+}
+.registration-button {
+    background: transparent;
+    border-radius: 8px;
+    border: none;
+    font-size: 24px;
+    width: 238px;
+    padding: 12px 20px;
+}

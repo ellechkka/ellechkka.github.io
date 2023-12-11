@@ -1,0 +1,77 @@
+.header-font {
+    margin-left: 18px;
+    margin-top: 40px;
+}
+.date-block {
+    margin-left: 26px;
+    margin-top: 24px;
+}
+.medium-text {
+    font-size: 22px;
+}
+.time-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 9px;
+    margin-top: 12px;
+    width: 324px;
+}
+.time {
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    width: 100px;
+    height: 52px;
+    padding-top: 12px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}  
+.time:hover {
+    cursor: pointer;
+}
+.pop-up {
+    display: none;
+    position: absolute;
+    top: 290px;
+    left: 24px;
+    z-index: 2;
+    width: 342px;
+    height: 192px;
+    background-color: var(--button-color);
+    border: 1px solid var(--bg-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 38px 37px 15px;
+}
+.pop-up span {
+    font-family: Playfair Display, serif;
+    font-size: 28px;
+    color: var(--text-color);
+    display: block;
+    margin: 0 37px;
+    width: 174px;
+}
+.pop-up button{
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+}
+.buttons-block {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+}
+.cancel {
+    padding: 8.5px 23px;
+    color: var(--accent-color);
+    background-color: var(--bg-color);
+}
+.confirm {
+    padding: 8.5px 10.5px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}

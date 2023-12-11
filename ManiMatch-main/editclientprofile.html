@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile-style.css">
+    <link rel="stylesheet" href="clientprofile-style.css">
+    <link rel="stylesheet" href="edit-profile-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <div class="back-action">
+                    <a href="homepage.html">
+                        <img class="back-arror arror-icon" src="images\back arror.svg"></img>
+                        <span class="main-text-font">назад</span>
+                    </a>
+                </div>
+                <button onclick="back_to_client_profile(event)">
+                    <img class="edit-button" src="images/check.svg">
+                </button>
+            </nav>
+
+            <div class="info-block client">
+                <span class="edit-name main-text-font">Вероника</span>
+            </div>
+        </div>
+    </div>  
+
+    <script defer src="script_edit_profile.js"></script>
+</body>
+</html>

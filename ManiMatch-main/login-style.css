@@ -1,0 +1,62 @@
+.header-font {
+    margin-left: 14px;
+    margin-top: 30px;
+}
+.login-container {
+    width: 288px;
+    margin: 62px auto 0;
+}
+input[type=text], input[type=password] {
+    font-size: 18px;
+    font-family: 'Poiret One', cursive;
+    width: 288px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    box-sizing: border-box;
+}
+/* .login-container button {
+    padding: 8px 67px;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-sizing: border-box;
+    width: 192px;
+} */
+.login-button {
+    padding: 8px 67px;
+    margin: 20px 99px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-sizing: border-box;
+    width: 192px;
+}
+.signup-button {
+    padding: 8px 19px;
+    margin: 20px 75px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-sizing: border-box;
+    width: 240px;
+}
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+    width: 288px;
+    margin: 0 auto;
+}
+.links-container a{
+    display: block;
+    text-align: center;
+}

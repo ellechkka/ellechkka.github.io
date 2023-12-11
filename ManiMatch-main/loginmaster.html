@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <a href="homepage.html">
+                    <img class="arror-icon" src="images\back arror.svg"></img>
+                    <span class="main-text-font">назад</span>
+                </a>
+            </nav>
+
+            <h1 class="header-font">Войти как мастер</h1>
+            
+            <div class="login-container">
+                <form class="main-text-font small-text">
+                    <label for="email">e-mail</label>
+                    <input type="text" placeholder="e-mail" name="email">
+                    
+                    <label for="psw">пароль</label>
+                    <input type="password" placeholder="пароль" name="psw">
+                </form>
+        
+            </div>
+            <form action="masterprofile.html">
+                <button onclick="log_in_master(event)" class="main-text-font button-text login-button">войти</button>
+            </form>
+            <div class="links-container">
+                <a href="loginсlient.html" class="main-text-font small-text">войти как клиент</a>
+                <a href="signupmaster.html" class="main-text-font small-text">зарегестрироваться</a>
+            </div>
+        </div>
+    </div>
+      
+    <script defer src="script_login.js"></script>
+</body>
+</html>

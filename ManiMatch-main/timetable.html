@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timetable-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <button onclick="pop_edit(event)">
+                    <img class="edit-button" src="images/plus.svg">
+                </button>
+                <button onclick="back_to_edit_master_profile(event)">
+                    <img class="edit-button" src="images/check.svg">
+                </button>
+            </nav>
+
+            <div class="time-table">
+                <div class="t-header">
+                    <div class="day main-text-font">
+                        <span>п</span>
+                        <span>12</span>
+                    </div>
+                    <div class="day main-text-font">
+                        <span>в</span>
+                        <span>13</span>
+                    </div>
+                    <div class="day main-text-font">
+                        <span>с</span>
+                        <span>14</span>
+                    </div>
+                    <div class="day main-text-font">
+                        <span>ч</span>
+                        <span>15</span>
+                    </div>
+                    <div class="day main-text-font">
+                        <span>п</span>
+                        <span>16</span>
+                    </div>
+                    <div class="day main-text-font">
+                        <span>с</span>
+                        <span class="today">17</span>
+                    </div>
+                    <div class="day main-text-font">
+                        <span>в</span>
+                        <span>18</span>
+                    </div>
+                </div>
+                <div class="t-body">
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">8:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">9:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">10:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">11:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">12:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">13:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">14:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">15:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">16:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">17:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">18:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">19:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">20:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">21:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">22:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+                    <div class="t-body-row">
+                        <span class="main-text-font small-text">23:00</span>
+                        <span>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</span>
+                    </div>
+
+                    <div class="work-time">
+                        <span class="small-text main-text-font">рабочее время</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pop-up-add-date" id ="add-date">
+                <p class="header-text main-text-font">Добавить рабочее время</p>
+                <div class="picker-block">
+                    <span class="main-text-font">Дата</span>
+                    <form>
+                        <input type="date" id="date" name="date"/>
+                    </form>
+                </div>
+                
+                <span class="main-text-font time">Время</span>
+                <div class="time-picker">
+                    <div>
+                        <span class="main-text-font small-text">c</span>
+                        <form>
+                            <input type="time" id="time1" name="time1"/>
+                        </form>
+                    </div>
+                    <div>
+                        <span class="main-text-font small-text">до</span>
+                        <form>
+                            <input type="time" id="time2" name="time2"/>
+                        </form>
+                    </div>
+                </div>
+                    
+                <div class="buttons-block">
+                    <button onclick="close_pop_up(event)" class="cancel main-text-font small-text">отменить</button>
+                    <button onclick="close_pop_up(event)" class="confirm main-text-font small-text">добавить</button>
+                </div>
+
+            </div>
+        </div>
+    </div>  
+
+    <script defer src="script_edit_profile.js"></script>
+</body>
+</html>

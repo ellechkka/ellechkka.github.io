@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <div>
+                    <a href="findmaster.html">
+                        <img class="back-arror arror-icon" src="images\back arror.svg"></img>
+                        <span class="main-text-font">назад</span>
+                    </a>
+                </div>
+                <button id="edit" onclick="edit_master_profile(event)">
+                    <img class="edit-button" src="images/edit-button.svg">
+                </button>
+            </nav>
+            
+            <img class="profile-pic" src="images/e3feae7da3e7d7f9b708398fbfc5c3dc.jpg"> 
+
+            <div class="info-block">
+                <span class="main-text-font small-text">имя</span>
+                <span class="name">Александра</span>
+            </div>
+            <div class="info-block">
+                <span class="main-text-font small-text">адрес</span>
+                <span class="name">Санкт-Петербург, Парк&#160;Победы</span>
+            </div>
+            <div class="info-block">
+                <span class="main-text-font small-text">работы мастера</span>
+                <div class="photo-block">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                    <div class="six"></div>
+                    <div class="seven"></div>
+                    <div class="eight"></div>
+                </div>
+            </div>
+
+            <div class="info-block main-text-font small-text">
+                <span>услуги</span>
+                <div class="service-block">
+                    <span>маникюр</span>
+                    <div class="right-span">
+                        <span>- 1 час</span>
+                        <span>400 руб</span>
+                    </div>
+                    <span>маникюр + покрытие гель лак</span>
+                    <div class="right-span">
+                        <span>- 2,5 часа</span>
+                        <span>900 руб</span>
+                    </div>
+                    <span>снятие + маникюр + покрытие гель лак </span>
+                    <div class="right-span">
+                        <span>- 3 часа</span>
+                        <span>1100 руб</span>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="info-block">
+                <span class="main-text-font small-text">Отзывы</span>
+                <div class="review-block">
+                    <span class="review-name">Вероника</span>
+                    <img src="images/star_raiting1.svg">
+                    <p class="main-text-font small-text">Приятная мастерица, сняла пол балла за неудобную локацию и балл за то, что пришлось поменять дизайн немного.</p>
+                    <div class="review-photo-block">
+                        <img src="images/f6e5501781e3a896a4c83f9c716ee305.jpg">
+                        <img src="images/5548fc3cae6f30615a29d6faa5a379e6.jpg">
+                        <img src="images/fea9b44c84532e29971f02fd00ea5875.jpg">
+                    </div>
+                </div>
+
+                <div class="review-block">
+                    <span class="review-name">Марина</span>
+                    <img src="images/star_raiting2.svg">
+                    <p class="main-text-font small-text">Делаю маникюр у мастерицы почти год, все всегда нравится, приятная атмосфера, смотрим</p>
+                    <div class="review-photo-block">
+                        <img src="images/5e2b263c14e1558af4d61d0dcf8b1859.jpg">
+                        <img src="images/b9e8dd4a85cb6bc005271d6a88343516.jpg">
+                        <img src="images/f02e2b0f292066f1a98199f36a140b6c.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-or-logout" id="logout">
+                <form>
+                    <button onclick="log_out_master(event)" class="main-text-font button-text login-button">выйти</button>
+                </form>
+            </div>
+
+            <div class="book-or-logout" id="book">
+                <!-- <form action="bookappointment.html">
+                    <button class="book-button">записаться</button>
+                </form> -->
+                <button onclick="try_book(event)" class="book-button">записаться</button>
+            </div>
+
+            <div class="for-footer"></div>
+        </div>
+        <footer>
+            <a href="findmaster.html">
+                <img class="find-icon" src="images\findactive.svg">
+            </a>
+            <a href="">
+                <button onclick="open_profile(event)">
+                    <img class="profile-icon" src="images/profileinactive.svg">
+                </button>
+            </a>
+        
+        </footer>
+    </div>  
+
+    <script defer src="script_edit_profile.js"></script>
+    <script defer src="script_login.js"></script>
+</body>
+</html>

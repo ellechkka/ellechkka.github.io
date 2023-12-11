@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile-style.css">
+    <link rel="stylesheet" href="edit-profile-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <div class="back-action">
+                    <a href="findmaster.html">
+                        <img class="back-arror arror-icon" src="images\back arror.svg"></img>
+                        <span class="main-text-font">назад</span>
+                    </a>
+                </div>
+                <button id="edit" onclick="back_to_master_profile(event)">
+                    <img class="edit-button" src="images/check.svg">
+                </button>
+            </nav>
+            
+            <img class="profile-pic" src="images/e3feae7da3e7d7f9b708398fbfc5c3dc.jpg"> 
+
+            <div class="info-block">
+                <span class="edit-name main-text-font">Александра</span>
+            </div>
+            <div class="info-block">
+                <span class="edit-name main-text-font">Санкт-Петербург, Парк&#160;Победы</span>
+            </div>
+            <div class="info-block">
+                <span class="main-text-font small-text">работы мастера</span>
+                <div class="photo-block">
+                    <div class="one">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="two">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="three">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="four">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="five">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="six">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="seven">
+                        <img src="images/bin.svg">
+                    </div>
+                    <div class="eight">
+                        <img src="images/bin.svg">
+                    </div>
+                </div>
+                <button class="add-photo main-text-font">+ добаить фото</button>
+            </div>
+
+            <div class="info-block-edit main-text-font small-text">
+                <span>услуги</span>
+                <div class="service-block-edit">
+                    <div class="service-row">
+                        <span>маникюр</span>
+                        <div class="icons">
+                            <img src="images/edit-button.svg">
+                            <img src="images/delete-dark.svg">
+                        </div>
+                    </div>
+                    <div class="service-row">
+                        <span>маникюр + покрытие гель лак</span>
+                        <div class="icons">
+                            <img src="images/edit-button.svg">
+                            <img src="images/delete-dark.svg">
+                        </div>
+                    </div>
+                    <div class="service-row">
+                        <span>снятие + маникюр + покрытие гель лак</span>
+                        <div class="icons">
+                            <img src="images/edit-button.svg">
+                            <img src="images/delete-dark.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="add-service">
+                <span class="main-text-font">+ добавить услугу</span>
+            </div>
+            <div class="edit-timetable" onclick="timetable(event)">
+                <span class="main-text-font">редактировать расписание</span>
+            </div>
+            <div class="space-after"></div>
+        </div>
+    </div>  
+
+    <script defer src="script_edit_profile.js"></script>
+    <script defer src="script_login.js"></script>
+</body>
+</html>

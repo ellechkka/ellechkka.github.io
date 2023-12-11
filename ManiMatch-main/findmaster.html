@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="findmaster-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <a href="homepage.html">
+                    <img class="arror-icon" src="images\back arror.svg"></img>
+                    <span class="main-text-font">назад</span>
+                </a>
+            </nav>
+
+            <h1 class="header-font">Поиск мастера</h1>
+          
+            <!-- закрытое меню фильтров -->
+            <div class="filter blocks-inside" id="filters-off">
+                <button onclick="open_filters()"> 
+                    <img src="images\down arror.png"></img>
+                </button>
+                <span class="main-text-font small-text">фильтры</span>
+            </div>
+
+                <!-- открытое меню фильтров -->
+            <div style="display: none;" class="filter-pareteters blocks-inside" id="filters-on">
+                <div class="filter"> 
+                    <button onclick="close_filters()">
+                        <img src="images\up arror.png"></img>
+                    </button>
+                    <span class="main-text-font small-text">фильтры</span>
+                 </div>
+
+                <div class="filter-parameters">
+                    <span class="main-text-font small-text price">цена</span>
+                    <div class="price_display">
+                        <div class="cell">
+                            <form action="">
+                                <input type="text" placeholder="от" class="main-text-font small-text">
+                            </form>
+                        </div>
+                        <span class="hyphen">&nbsp;&mdash;&nbsp;</span>
+                        <div class="cell">
+                            <form action="">
+                                <input type="text" placeholder="до" class="main-text-font small-text">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="checkbox-block">
+                        <input type="checkbox" name="dist_filter">
+                        <label for="dist_filter" class="main-text-font small-text">сортировать по расстоянию</label>
+                    </div>
+
+                    <form action="mapview.html">
+                        <button class="view-map main-text-font button-text">посмотреть на карте</button>
+                    </form>
+                </div>
+            </div> 
+
+            <div class="masters-block">
+                <a href="masterprofile.html"> 
+                    <div class="blocks-inside masters">
+                        <header>
+                            <img src="images\e3feae7da3e7d7f9b708398fbfc5c3dc.jpg"></img>
+                            <div>
+                                <span class="main-text-font master-name">Александра</span>
+                                <span class="main-text-font small-text">от 1100&nbsp;руб</span>
+                            </div>
+                        </header>
+                        <img src="images\location mark.svg"></img>
+                        <span class="main-text-font small-text">Санкт-Петербург, Парк&nbsp;Победы</span>
+                    </div>
+                </a>
+
+                <a href="masterprofile.html">
+                    <div class="blocks-inside masters">
+                        <header>
+                            <img src="images\6f8b9ec13b58545b55b64f546e78b78c.jpg"></img>
+                            <div>
+                                <span class="main-text-font master-name">Ирина</span>
+                                <span class="main-text-font small-text">от 1500&nbsp;руб</span>
+                            </div>
+                        </header>
+                        <img src="images\location mark.svg"></img>
+                        <span class="main-text-font small-text">Санкт-Петербург, Лесна</span>
+                    </div>
+                </a>
+
+                <a href="masterprofile.html">
+                    <div class="blocks-inside masters">
+                        <header>
+                            <img src="images\5d6c2c29d4ebab0cf3c04a91f5e6c45a.jpg"></img>
+                            <div>
+                                <span class="main-text-font master-name">Виктория</span>
+                                <span class="main-text-font small-text">от 900&nbsp;руб</span>
+                            </div>
+                        </header>
+                        <img src="images\location mark.svg"></img>
+                        <span class="main-text-font small-text">Санкт-Петербург, Академическая</span>
+                    </div>
+                </a>
+
+                <a href="masterprofile.html">
+                    <div class="blocks-inside masters">
+                        <header>
+                            <img src="images\7bf7bf377d969d0fcd53c4d93b1f5e65.jpg"></img>
+                            <div>
+                                <span class="main-text-font master-name">Виталия</span>
+                                <span class="main-text-font small-text">от 1200&nbsp;руб</span>
+                            </div>
+                        </header>
+                        <img src="images\location mark.svg"></img>
+                        <span class="main-text-font small-text">Санкт-Петербург, Купчино</span>
+                    </div>
+                </a>
+            </div> 
+        
+        </div>
+        <footer>
+            <a href="">
+                <img class="find-icon" src="images\findactive.svg">
+            </a>
+            <a href="">
+                <button onclick="open_profile(event)">
+                    <img class="profile-icon" src="images/profileinactive.svg">
+                </button>
+            </a>
+        </footer>
+    </div>  
+
+    <script defer src="script_find_masters.js"></script>
+    <script defer src="script_login.js"></script>
+</body>
+</html>

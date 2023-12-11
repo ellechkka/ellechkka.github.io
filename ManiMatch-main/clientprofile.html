@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile-style.css">
+    <link rel="stylesheet" href="clientprofile-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <div>
+                    <a href="homepage.html">
+                        <img class="back-arror arror-icon" src="images\back arror.svg"></img>
+                        <span class="main-text-font">назад</span>
+                    </a>
+                </div>
+                <button onclick="edit_client_profile(event)">
+                    <img class="edit-button" src="images/edit-button.svg">
+                </button>
+            </nav>
+
+            <div class="info-block client">
+                <span class="main-text-font small-text">имя</span>
+                <span class="name">Вероника</span>
+            </div>
+
+            <div class="future-apps" id="future">
+                <span class="small-text main-text-font">будущие записи</span>
+                <div class="review">
+                    <header>
+                        <div class="row">
+                            <img src="images\POVYShENIE-KVALIFIKACII-DLYa-MASTEROV-MANIKJuRA-NOGTEVOGO-SERVISA-1.jpg">
+                            <span class="master-name-in-review">Елизавета</span>
+                        </div>
+                        <div class="row">
+                            <span class="main-text-font small-text">17.07 17:00</span>
+                            <span class="main-text-font small-text">2500 руб</span>
+                        </div>
+                    </header>
+                    <button onclick="cancel_app_in_profile(event)" class="main-text-font small-text">отменить запись</button>
+                </div>
+            </div>
+
+            <div class="previous-apps">
+                <span class="small-text main-text-font">предыдущие записи</span>
+                <div class="review">
+                    <header>
+                        <div class="row">
+                            <img src="images\e3feae7da3e7d7f9b708398fbfc5c3dc.jpg">
+                            <span class="master-name-in-review">Александра</span>
+                        </div>
+                        <div class="row">
+                            <span class="main-text-font small-text">21.11</span>
+                            <span class="main-text-font small-text">1300 руб</span>
+                        </div>
+                    </header>
+                    <button class="main-text-font small-text">+ добавить отзыв</button>
+                </div>
+
+                
+                <div class="review">
+                    <header>
+                        <div class="row">
+                            <img src="images\e3feae7da3e7d7f9b708398fbfc5c3dc.jpg">
+                            <span class="master-name-in-review">Александра</span>
+                        </div>
+                        <div class="row">
+                            <span class="main-text-font small-text">18.10</span>
+                            <span class="main-text-font small-text">1300 руб</span>
+                        </div>
+                    </header>
+                    <div class="past-app-review main-text-font small-text">
+                        <div class="review-header">
+                            <img src="images/star_raiting1.svg">
+                            <img src="images/delete-dark.svg">
+                        </div>
+                        <p>Приятная мастерица, сняла пол балла за неудобную локацию и балл за то, что пришлось поменять дизайн немного.</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="logout-button">
+                <button onclick="log_out_client(event)" class="main-text-font button-text login-button">выйти</button>
+            </form>
+        </div>
+        <footer>
+            <a href="findmaster.html">
+                <img class="find-icon" src="images\findinactive.svg">
+            </a>
+            <a href="" id="link-to-profile">
+                <button onclick="open_client_profile()">
+                    <img id="" class="profile-icon" src="images/profileactive.svg">
+                </button>
+            </a>
+        </footer>
+    </div>  
+
+    <script defer src="script_login.js"></script>
+    <script defer src="script_edit_profile.js"></script>
+    <script defer src="script_book_app.js"></script>
+</body>
+</html>

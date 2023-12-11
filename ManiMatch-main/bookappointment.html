@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookapp-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>ManiMatch</title>
+</head>
+<body>
+    <div class="screen-container">
+        <div class="inner-page">
+            <nav>
+                <div>
+                    <a href="homepage.html">
+                        <img class="back-arror arror-icon" src="images\back arror.svg"></img>
+                        <span class="main-text-font">назад</span>
+                    </a>
+                </div>
+            </nav>
+
+            <h1 class="header-font">Выбор записи</h1>
+
+            <div class="date-block">
+                <span class="medium-text main-text-font">18 июня</span>
+                <div class="time-container">
+                    <div onclick="pop_up_window(event)" class="time main-text-font">12:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">13:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">14:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">15:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">16:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">17:00</div>
+                </div>
+            </div>
+            <div class="date-block">
+                <span class="medium-text main-text-font">19 июня</span>
+                <div class="time-container">
+                    <div onclick="pop_up_window(event)" class="time main-text-font">13:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">14:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">15:00</div>
+                </div>
+            </div>
+            <div class="date-block">
+                <span class="medium-text main-text-font">20 июня</span>
+                <div class="time-container">
+                    <div onclick="pop_up_window(event)" class="time main-text-font">10:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">11:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">12:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">13:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">14:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">15:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">16:00</div>
+                    <div onclick="pop_up_window(event)" class="time main-text-font">17:00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="pop-up-window">
+            <span>Вы записаны</span>
+            <div class="buttons-block">
+                <button onclick="cancel_app(event)" class="cancel main-text-font small-text">отменить запись</button>
+                <button onclick="book_app(event)" class="confirm main-text-font small-text">закрыть уведомление</button>
+            </div>
+        </div>
+
+        <footer>
+            <a href="findmaster.html">
+                <img class="find-icon" src="images\findinactive.svg">
+            </a>
+            <a href="clientprofile.html">
+                <img class="profile-icon" src="images/profileinactive.svg">
+            </a>
+        </footer>
+    </div>  
+
+    <script defer src="script_book_app.js"></script>
+</body>
+</html>
+
