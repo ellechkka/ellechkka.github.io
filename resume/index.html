@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel=”icon” href=”https://photos.fife.usercontent.google.com/pw/AP1GczNogMvYQ32JIDtcAv2kCs9PEJ3tyt5z3SD3gTBeFO-105LxE3wpJ2o=s220-no?authuser=0” type=”image/x-icon”>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+        }
+        h1, h2, h3 {
+            margin-bottom: 0.5em;
+        }
+        h1, h2 {
+            font-weight: 600;
+        }
+        h3 {
+            font-weight: 400;
+        }
+        .header {
+            background-color: #FCE4EC;
+            box-shadow: 0 10px 10px  #F8BBD0;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .header img {
+            height: 100px;
+            display: inline;
+            border-radius: 8px;
+            margin-right: 30px;
+        }
+        .container {
+            padding: 10px 30px;
+            overflow: visible;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        .max-width-text {
+            width: 80%;
+            max-width: 900px;
+        }
+        a {
+            text-decoration: none;
+        }
+        aside a {
+            color: black;
+        }
+        aside li {
+            margin-bottom: 0.2em;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
+        @media (min-width: 661px) {
+            .row {
+                grid-template-columns: 30% 70%;
+            }
+        }
+    </style>
+    <title>Романова Элина Резюме</title>
+</head>
+
+<body>
+
+    <header class="header container">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczPyVt2oTYM-Kb5OmelIZvXGw6pMiUI73iO3TZxfo7gLx2CZ15aWzHVVn5rKcNCBsB5G-zTYHiWlj3yPahJHy3-VNRdQIMSYVEgbhO3i4r2Oefe__uoLuJm2i2_lr2FtzqyFHN8s2ibp2NuejAzECFr7oxHp3t4mYiQ_hIinMfemxNhw4aTVmMCHechr5rf7Yb3_0ljCV5rMlBFXeDLZaGPpUb0QfJB9M9TvQry67CsRLyWgotQEQJ2bJcwfxiyL1ttIHoyo4ZB4kzmzQZJzs1Q7bycj-O5ZgOr7qnvOCIP4jMaTiCLEZRkff8WFKxMuEcGN0I3umtbaP9mRUpukBDN4PmpUAFdFivJCDP0MWHTGLS7MoH-UWpMnlKLlsueHFbByAwgkkEMqAilBP2ijQ-EngkL1EJj41p3XW_euscX0U16sAcpQ4vdvaCywN4vJ5vADvDjIKVfknNGAIkisTTtr2IUeMremZrRR5awy5eOgsUKG1PFpdLCbyzxw-IM_6o1pHYGRBuXjYwNXFFMoemasUlU236OomlBATt5ccDGbpf9TRRTF3vBNOuPHQMcknZ6ap-Cs3wLORiY3JkUJbMIJEV5o86y3dkvO_MxUe4jsNPQQJiv9f0HKJeSdCJmGkC1GBakw3iIzhMiL7IWH17wIoZL4vIHadp7tEiSKfkHnnvjMGhmtEINq21rEABUFDD9xjHUnfuJpVm_85xpikCb-bGhFXR_Kawfk3LkW9F01Jafy5EIFcGe5kIpuiTT09P9oOIomiCTxjn8RhaBEjQFKYbNlyIa2hwf7fWqANqexJew_u0YKYzwamxXkaz2yS2QLw3sjeNr-ORK8VtA_V6ztk2HMnD8e9vCA4vato4jWiOV8S9gKzBPEavnKGnOcHk1jgta7SnyT-9Fr3VxjNl4=w1262-h1262-s-no-gm?authuser=0">
+        <h1>Элина Романова</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <aside>
+                <div class="container">
+                    <h2>Контактная информация</h2>
+                    <ul>
+                        <li>+7 (950) 020-11-53</li>
+                        <li>romanovaelp<wbr>@gmail.com</li>
+                        <li><a href="https://github.com/ellechkka" target="_blank">Github</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div>
+                <section>
+                    <div class="container">
+                        <h2>Обо мне</h2>
+                        <p>Мне 21 год, я - студентка ИТМО, живу в Санкт-Петербурге, сейчас ищу стажировку в айти</p>
+                        <h3>Навыки</h3>
+                        <p>HTML, CSS, JavaScript, Java, SQL, PHP, Python, NumPy</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <h2>Опыт</h2>
+                        <h3>Учебные проекты</h3>
+                        <ul class="max-width-text">
+                            <li><a href="https://ellechkka.github.io/shop2.0/index.html" target="_blank">Интернет магазин</a> - верстка</li>
+                            <li><a href="https://ellechkka.github.io/ManiMatch-main/homepage.html" target="_blank">Приложение</a> - разработка дизайна, верстка, тестирование приложения</li>
+                            <li><a href="https://se.ifmo.ru/~s314947/db/game/" target="_blank">Настольная игра</a> - создание базы данных, написание процедур sql, использование транзакций, верстка, php запросы в базу данных, ajax-запросы</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <h2>Образование</h2>
+                        <p class="max-width-text">Студентка 4 курса, направление «Программная инженерия», специализация «Разработка графических и веб-приложений»</p>
+                        <!-- <p>Bachelor's Degree in Program Engineering | Университет ИТМО, 2024 | Санкт-Петербург, Россия</p> -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
